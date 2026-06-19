@@ -488,6 +488,7 @@ export async function POST(req: NextRequest) {
     }
 
     const buffer = await renderToBuffer(
+      // @ts-ignore
       React.createElement(RelatorioPDF, {
         diagnostico,
         riscos: riscos || [],
